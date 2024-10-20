@@ -181,6 +181,7 @@ cashoutBtn.addEventListener('click', () => {
 // Run Function for Restarting the Game
 function run() {
     initGame(); // Initialize the game
+    enableBoard();
 }
 
 // Restart Button
