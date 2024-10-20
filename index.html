@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mines Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <button id="reset-btn" style="position: absolute; top: 10px; left: 10px;">Reset</button> <!-- Reset button -->
+      <h1>Mines Game</h1>
+      <p>Credits: <span id="credits">1000</span></p>
+      <p>Current Bet: <span id="current-bet">0</span></p>
+      <p>Credit Gain: <span id="credit-gain">0</span></p>
+    </div>
+
+    <div class="bet-options">
+      <button class="bet-btn" data-multiplier="1">1x (1 Credit)</button>
+      <button class="bet-btn" data-multiplier="2">2x (2 Credits)</button>
+      <button class="bet-btn" data-multiplier="4">4x (4 Credits)</button>
+      <button class="bet-btn" data-multiplier="8">8x (8 Credits)</button>
+    </div>
+
+    <div id="game-board" class="game-board"></div>
+
+    <div class="controls">
+      <button id="cashout-btn">Cash Out</button>
+      <button id="restart-btn">Restart</button>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
